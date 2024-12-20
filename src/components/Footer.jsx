@@ -1,13 +1,15 @@
 import React from 'react';
 import { FaFacebookF, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaTiktok } from 'react-icons/fa';
 import Logo from '../assets/logo.png';
+import Bishnu from '../assets/Profile/BishnuKC.png';
+import Bimal from '../assets/Profile/BimalKC.png';
 
 function Footer() {
   return (
     <div className="bg-purple-800 text-white py-8 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Footer Top Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
 
           {/* Logo and Info Section */}
           <div className="flex flex-col items-center md:items-start">
@@ -22,7 +24,7 @@ function Footer() {
               <FaPhoneAlt className="mr-2" /> +977 9866985352
             </p>
             <p className="text-base text-white flex items-center font-poppins">
-              <FaEnvelope className="mr-2" /> info@bishnumobilecenter.com
+              <FaEnvelope className="mr-2" /> bimalikhatri55ghanikhatri@gmail.com
             </p>
             <p className="text-base text-white flex items-center font-poppins">
               <FaMapMarkerAlt className="mr-2" /> Sarumarani-04 Baddanda Pyuthan
@@ -42,8 +44,27 @@ function Footer() {
             </div>
           </div>
 
+          {/* Proprietors Section */}
+          <div className="flex flex-col items-center md:items-center gap-3">
+            <h3 className="text-2xl font-medium mb-2 text-white font-poppins">Proprietors</h3>
+            <div className="flex space-x-6 gap-2">
+              {/* Proprietor 1 */}
+              <a href="tel:+977 9822973822" className="flex flex-col items-center">
+                <img src={Bishnu} alt="Proprietor 1" className="w-24 h-24 border border-white rounded-full mb-2" />
+                <p className="text-base font-poppins">Bishnu KC</p>
+                <p className="text-sm font-poppins">9822973822</p>
+              </a>
+              {/* Proprietor 2 */}
+              <a href="tel:+977 9866985352" className="flex flex-col items-center">
+                <img src={Bimal} alt="Proprietor 2" className="w-24 h-24 border border-white rounded-full mb-2" />
+                <p className="text-base font-poppins">Bimal KC</p>
+                <p className="text-sm font-poppins">9866985352</p>
+              </a>
+            </div>
+          </div>
+
         </div>
-        <hr className='mt-8'/>
+        <hr className="mt-8" />
 
         {/* Footer Bottom Section */}
         <div className="mt-10 text-center">
