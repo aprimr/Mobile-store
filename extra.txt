@@ -1,2 +1,0 @@
-green - #72f540 - lime-400
-purple - #6b1a9a - purple-800

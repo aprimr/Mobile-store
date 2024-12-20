@@ -3,7 +3,7 @@ import { HiMenu, HiX } from "react-icons/hi";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isSticky, setIsSticky] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);  
 
   const handleLogoClick = () => {
     window.location.href = '/';
@@ -52,19 +52,19 @@ const Navbar = () => {
             {/* Navigation Links - Desktop */}
             <div className="hidden md:flex justify-center">
               <div className="flex-1 items-center space-x-8">
-                <a href="#" onClick={(e) => handleMenuClick(e, '#home')} className={`px-3 py-2 text-lg font-medium group transition duration-300 relative ${isSticky ? 'text-black' : 'text-white'}`}>
+                <a href="" onClick={(e) => handleMenuClick(e, '#home')} className={`px-3 py-2 text-lg font-medium group transition duration-300 relative ${isSticky ? 'text-black' : 'text-white'}`}>
                   Home
                   <span className={`absolute bottom-0 left-0 w-full h-0.5 ${isSticky ? 'bg-black' : 'bg-white'} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300`}></span>
                 </a>
-                <a href="#" onClick={(e) => handleMenuClick(e, '#services')} className={`px-3 py-2 text-lg font-medium group transition duration-300 relative ${isSticky ? 'text-black' : 'text-white'}`}>
+                <a href="" onClick={(e) => handleMenuClick(e, '#services')} className={`px-3 py-2 text-lg font-medium group transition duration-300 relative ${isSticky ? 'text-black' : 'text-white'}`}>
                   Services
                   <span className={`absolute bottom-0 left-0 w-full h-0.5 ${isSticky ? 'bg-black' : 'bg-white'} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300`}></span>
                 </a>
-                <a href="#" onClick={(e) => handleMenuClick(e, '#about')} className={`px-3 py-2 text-lg font-medium group transition duration-300 relative ${isSticky ? 'text-black' : 'text-white'}`}>
+                <a href="" onClick={(e) => handleMenuClick(e, '#about')} className={`px-3 py-2 text-lg font-medium group transition duration-300 relative ${isSticky ? 'text-black' : 'text-white'}`}>
                   About
                   <span className={`absolute bottom-0 left-0 w-full h-0.5 ${isSticky ? 'bg-black' : 'bg-white'} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300`}></span>
                 </a>
-                <a href="#" onClick={(e) => handleMenuClick(e, '#location')} className={`px-3 py-2 text-lg font-medium group transition duration-300 relative ${isSticky ? 'text-black' : 'text-white'}`}>
+                <a href="" onClick={(e) => handleMenuClick(e, '#location')} className={`px-3 py-2 text-lg font-medium group transition duration-300 relative ${isSticky ? 'text-black' : 'text-white'}`}>
                   Location
                   <span className={`absolute bottom-0 left-0 w-full h-0.5 ${isSticky ? 'bg-black' : 'bg-white'} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300`}></span>
                 </a>
@@ -91,10 +91,10 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="pl-5 px-2 pt-2 pb-3 w-full flex flex-col items-center justify-around space-y-1 sm:px-3">
-              <a href="#" onClick={(e) => handleMenuClick(e, '#home')} className={`block w-full px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ${isSticky ? 'text-black hover:text-black' : 'text-white hover:text-gray-300'}`}>Home</a>
-              <a href="#" onClick={(e) => handleMenuClick(e, '#services')} className={`block w-full px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ${isSticky ? 'text-black hover:text-black' : 'text-white hover:text-gray-300'}`}>Services</a>
-              <a href="#" onClick={(e) => handleMenuClick(e, '#about')} className={`block w-full px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ${isSticky ? 'text-black hover:text-black' : 'text-white hover:text-gray-300'}`}>About</a>
-              <a href="#" onClick={(e) => handleMenuClick(e, '#location')} className={`block w-full px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ${isSticky ? 'text-black hover:text-black' : 'text-white hover:text-gray-300'}`}>Location</a>
+              <a href="" onClick={(e) => handleMenuClick(e, '#home')} className={`block w-full px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ${isSticky ? 'text-black hover:text-black' : 'text-white hover:text-gray-300'}`}>Home</a>
+              <a href="" onClick={(e) => handleMenuClick(e, '#services')} className={`block w-full px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ${isSticky ? 'text-black hover:text-black' : 'text-white hover:text-gray-300'}`}>Services</a>
+              <a href="" onClick={(e) => handleMenuClick(e, '#about')} className={`block w-full px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ${isSticky ? 'text-black hover:text-black' : 'text-white hover:text-gray-300'}`}>About</a>
+              <a href="" onClick={(e) => handleMenuClick(e, '#location')} className={`block w-full px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ${isSticky ? 'text-black hover:text-black' : 'text-white hover:text-gray-300'}`}>Location</a>
             </div>
           </div>
         )}

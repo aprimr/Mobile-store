@@ -6,10 +6,12 @@ import MessageComponent from '../components/MessageComponent'
 import BrandsComponent from '../components/BrandsComponent'
 import LocationComponent from '../components/LocationComponent'
 import About from '../components/About'
+import Navbar from '../components/Navbar'
 
 function Home() {
   return (
     <>
+      <Navbar />
       <WelcomeComponent />
       <ImageCarousel />
       <OurServices />

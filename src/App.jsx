@@ -1,15 +1,13 @@
 import TopBar from "./components/TopBar"
-import Home from "./pages/Home"
-import Navbar from "./components/Navbar"
 import Footer from './components/Footer'
+import { Outlet } from "react-router"
 
 function App() {
 
   return (
     <>
       <TopBar />
-      <Navbar />
-      <Home />
+      <Outlet />
       <Footer />
     </>
   )
